@@ -29,6 +29,6 @@ REM     %sudo ALL=NOPASSWD: /etc/init.d/cron
 REM     %sudo ALL=NOPASSWD: /etc/init.d/ssh
 REM     %sudo ALL=NOPASSWD: /etc/init.d/mysql
 REM     %sudo ALL=NOPASSWD: /etc/init.d/apache2
-for /f %%i in (commands.txt) do (wsl sudo %%i %*)
+for /f %%i in (%~dp0commands.txt) do (wsl sudo %%i %*)
 
 :end
