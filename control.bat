@@ -22,13 +22,7 @@ if /i "%state%"=="STOPPING" (goto end)
 
 :start
 REM Start services in the WSL
-REM Just define the service start commands in here.
-REM (You need to modify the /etc/sudoers file to specifies that they can be called without a password.)
-REM E.g:
-REM     %sudo ALL=NOPASSWD: /etc/init.d/cron
-REM     %sudo ALL=NOPASSWD: /etc/init.d/ssh
-REM     %sudo ALL=NOPASSWD: /etc/init.d/mysql
-REM     %sudo ALL=NOPASSWD: /etc/init.d/apache2
+REM Define the service commands in commands.txt.
 for /f %%i in (%~dp0commands.txt) do (wsl sudo %%i %*)
 
 :end
