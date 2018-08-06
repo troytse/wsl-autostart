@@ -5,8 +5,8 @@ Support for starting linux services in Windows Subsystem for Linux (WSL) on Wind
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Usage](#Usage)
+* [Installation](#installation)
+* [Usage](#usage)
 
 ## Installation
 
