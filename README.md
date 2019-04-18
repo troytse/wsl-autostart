@@ -26,7 +26,7 @@ git clone https://github.com/troytse/wsl-autostart
 
 ## Usage
 
-* Modify `/etc/sudoers` file in the WSL to specify the service commands calling on startup without a password.
+* Modify `/etc/sudoers` in the WSL to specify the service commands calling on startup without a password.
 e.g:
 ``` sudoers
 %sudo ALL=NOPASSWD: /etc/init.d/cron
@@ -34,7 +34,7 @@ e.g:
 %sudo ALL=NOPASSWD: /etc/init.d/mysql
 %sudo ALL=NOPASSWD: /etc/init.d/apache2
 ```
-* Modify `commands.txt` file to specify the service commands for your need.
+* Modify `commands.txt` in the wsl-autostart directory to specify the service commands for your need.
 e.g:
 ``` shell
 /etc/init.d/cron
