@@ -41,7 +41,7 @@ git clone https://github.com/troytse/wsl-autostart
     - for the distribution Opensuse:
 
         ``` sudoers
-        %sudo ALL=NOPASSWD: /usr/sbin/cron
+        %users ALL=(ALL) NOPASSWD: /usr/sbin/cron
         ```
 
 * Modify `commands.txt` in the wsl-autostart directory to specify the service commands accordingly.
